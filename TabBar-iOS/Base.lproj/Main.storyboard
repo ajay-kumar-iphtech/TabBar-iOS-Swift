@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jN0-OH-6xD">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="TabBar_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="brs-0h-gZJ">
+                                <rect key="frame" x="56" y="287" width="281" height="69"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2E-NY-oMk">
+                                        <rect key="frame" x="102.66666666666666" y="0.0" width="75.666666666666657" height="34.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by firstViewController" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Irr-eR-xmz">
+                                        <rect key="frame" x="0.0" y="42.666666666666686" width="281" height="26.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1f-ST-GP2">
+                                <rect key="frame" x="161" y="730" width="71" height="71"/>
+                                <color key="backgroundColor" red="0.46967965360000002" green="0.67036288980000003" blue="0.3920723498" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="UOx-0l-SdA"/>
+                                    <constraint firstAttribute="width" secondItem="F1f-ST-GP2" secondAttribute="height" multiplier="1:1" id="dvQ-X8-Uq4"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.055891886350000003" green="0.69437879319999996" blue="0.85038167239999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="F1f-ST-GP2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Iho-Xs-bNR"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="F1f-ST-GP2" secondAttribute="bottom" constant="-32" id="fs2-yK-cBS"/>
+                            <constraint firstItem="brs-0h-gZJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="228" id="iTg-tA-RBz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="brs-0h-gZJ" secondAttribute="trailing" constant="56" id="o06-W9-Vda"/>
+                            <constraint firstItem="brs-0h-gZJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="ooE-xp-qxK"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="home" image="homeIcon" id="dZ0-pc-vEu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="896.94656488549617" y="-477.46478873239437"/>
+        </scene>
+        <!--My Tab Bar View Controller-->
+        <scene sceneID="fk9-9H-6LP">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="jN0-OH-6xD" customClass="MyTabBarViewController" customModule="TabBar_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ogx-hd-fsB" customClass="CustomizedTabBar" customModule="TabBar_iOS" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="evb-RS-uCo"/>
+                        <segue destination="xA0-Ww-CEW" kind="relationship" relationship="viewControllers" id="UJ8-1F-g9w"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FLG-M6-Wvp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.832061068702288" y="-27.464788732394368"/>
+        </scene>
+        <!--profile-->
+        <scene sceneID="Dm7-RV-d5y">
+            <objects>
+                <viewController id="xA0-Ww-CEW" customClass="SecondViewController" customModule="TabBar_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c53-Xn-O4h">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BWO-7Y-i6Q">
+                                <rect key="frame" x="43" y="287" width="307" height="69"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJp-5p-cr6">
+                                        <rect key="frame" x="114.33333333333334" y="0.0" width="78.666666666666657" height="34.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SeondViewController" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sf7-9X-95w">
+                                        <rect key="frame" x="0.66666666666665719" y="42.666666666666686" width="306" height="26.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gq1-1d-oD3">
+                                <rect key="frame" x="161.66666666666666" y="734" width="70" height="70"/>
+                                <color key="backgroundColor" red="0.46967965360000002" green="0.67036288980000003" blue="0.3920723498" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gq1-1d-oD3" secondAttribute="height" multiplier="1:1" id="yZs-qS-o6x"/>
+                                    <constraint firstAttribute="width" constant="70" id="yhD-NL-e46"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="or6-1S-xKf"/>
+                        <color key="backgroundColor" red="0.46297848219999999" green="0.79390984769999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gq1-1d-oD3" firstAttribute="centerY" secondItem="or6-1S-xKf" secondAttribute="bottom" id="9Lm-tc-hnF"/>
+                            <constraint firstItem="or6-1S-xKf" firstAttribute="trailing" secondItem="BWO-7Y-i6Q" secondAttribute="trailing" constant="43" id="FDu-Ed-Qlt"/>
+                            <constraint firstItem="BWO-7Y-i6Q" firstAttribute="top" secondItem="or6-1S-xKf" secondAttribute="top" constant="228" id="GI7-7U-C7s"/>
+                            <constraint firstItem="gq1-1d-oD3" firstAttribute="centerX" secondItem="or6-1S-xKf" secondAttribute="centerX" id="naC-lm-zHy"/>
+                            <constraint firstItem="BWO-7Y-i6Q" firstAttribute="leading" secondItem="or6-1S-xKf" secondAttribute="leading" constant="43" id="opC-31-97f"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="profile" image="profile" id="8F5-wE-ypo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8uh-Qj-mwJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036" y="225"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="ogx-hd-fsB">
+            <size key="intrinsicContentSize" width="-1" height="83"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="homeIcon" width="32" height="32"/>
+        <image name="profile" width="28" height="28"/>
+    </resources>
+</document>
